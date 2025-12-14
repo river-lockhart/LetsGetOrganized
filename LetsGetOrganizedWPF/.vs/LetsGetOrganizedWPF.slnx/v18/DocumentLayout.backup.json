@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\LetsGetOrganizedProject\\LetsGetOrganized\\LetsGetOrganizedWPF\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DBA9ECDA-F94F-44E7-8A0A-B3C05C803B9B}|LetsGetOrganizedWPF.csproj|c:\\letsgetorganizedproject\\letsgetorganized\\letsgetorganizedwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DBA9ECDA-F94F-44E7-8A0A-B3C05C803B9B}|LetsGetOrganizedWPF.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{E0911FF3-4C70-E22A-C8F6-CD22C3992B0C}|LetsGetOrganizedWPF.csproj|c:\\letsgetorganizedproject\\letsgetorganized\\letsgetorganizedwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E0911FF3-4C70-E22A-C8F6-CD22C3992B0C}|LetsGetOrganizedWPF.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DBA9ECDA-F94F-44E7-8A0A-B3C05C803B9B}|LetsGetOrganizedWPF.csproj|c:\\letsgetorganizedproject\\letsgetorganized\\letsgetorganizedwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBA9ECDA-F94F-44E7-8A0A-B3C05C803B9B}|LetsGetOrganizedWPF.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0911FF3-4C70-E22A-C8F6-CD22C3992B0C}|LetsGetOrganizedWPF.csproj|c:\\letsgetorganizedproject\\letsgetorganized\\letsgetorganizedwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0911FF3-4C70-E22A-C8F6-CD22C3992B0C}|LetsGetOrganizedWPF.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,14 +40,10 @@
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\LetsGetOrganizedProject\\LetsGetOrganized\\LetsGetOrganizedWPF\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-14T06:14:18.83Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

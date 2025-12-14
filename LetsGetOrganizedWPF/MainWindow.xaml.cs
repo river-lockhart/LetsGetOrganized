@@ -20,5 +20,17 @@ namespace LetsGetOrganizedWPF
         {
             InitializeComponent();
         }
+
+        private void StartOrganizing_Click(object sender, RoutedEventArgs e)
+        {
+            // Placeholder for organizing logic
+            MessageBox.Show("Organizing started!");
+        }
+
+        private void SelectFolders_Click(object sender, RoutedEventArgs e)
+        {
+            // Placeholder for folder selection logic
+            MessageBox.Show("Folder selection dialog opened!");
+        }
     }
 }

@@ -5,65 +5,251 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LetsGetOrganizedWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Let's Get Organized"
+        MaxHeight="646"
+        MaxWidth="1036"
+        MinHeight="520"
+        MinWidth="600"
+        Background="#FFF7FAFC"
+        FontFamily="Segoe UI">
+
+    <Window.Resources>
+        <!-- colors -->
+        <SolidColorBrush x:Key="TextPrimary" Color="#FF0F172A"/>
+        <SolidColorBrush x:Key="TextSecondary" Color="#FF475569"/>
+        <SolidColorBrush x:Key="CardBg" Color="#FFFFFFFF"/>
+        <SolidColorBrush x:Key="BorderSoft" Color="#FFE2E8F0"/>
+
+        <SolidColorBrush x:Key="Accent" Color="#FF3B82F6"/>
+        <SolidColorBrush x:Key="AccentHover" Color="#FF2563EB"/>
+        <SolidColorBrush x:Key="AccentPressed" Color="#FF1D4ED8"/>
+
+        <SolidColorBrush x:Key="ButtonBg" Color="#FF3B82F6"/>
+        <SolidColorBrush x:Key="ButtonFg" Color="#FFFFFFFF"/>
+
+        <SolidColorBrush x:Key="GhostBg" Color="#FFEFF6FF"/>
+        <SolidColorBrush x:Key="GhostHover" Color="#FFDBEAFE"/>
+        <SolidColorBrush x:Key="GhostPressed" Color="#FFBFDBFE"/>
+
+        <!-- text styles -->
+        <Style x:Key="TitleText" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="{StaticResource TextPrimary}"/>
+            <Setter Property="FontSize" Value="80"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+        </Style>
+
+        <Style x:Key="SectionHeaderText" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="{StaticResource TextPrimary}"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+        </Style>
+
+        <Style x:Key="BodyText" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="{StaticResource TextSecondary}"/>
+            <Setter Property="FontSize" Value="13.5"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="LineHeight" Value="18"/>
+        </Style>
+
+        <!-- primary button -->
+        <Style x:Key="PrimaryButton" TargetType="Button">
+            <Setter Property="Foreground" Value="{StaticResource ButtonFg}"/>
+            <Setter Property="Background" Value="{StaticResource ButtonBg}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource ButtonBg}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="16,8"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="FontSize" Value="13.5"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="bd"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="10">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="bd" Property="Background" Value="{StaticResource AccentHover}"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="bd" Property="Background" Value="{StaticResource AccentPressed}"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter TargetName="bd" Property="Opacity" Value="0.45"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- ghost button -->
+        <Style x:Key="GhostButton" TargetType="Button" BasedOn="{StaticResource PrimaryButton}">
+            <Setter Property="Foreground" Value="{StaticResource AccentPressed}"/>
+            <Setter Property="Background" Value="{StaticResource GhostBg}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource BorderSoft}"/>
+        </Style>
+
+        <!-- textbox -->
+        <Style x:Key="PrettyTextBox" TargetType="TextBox">
+            <Setter Property="Background" Value="{StaticResource CardBg}"/>
+            <Setter Property="Foreground" Value="{StaticResource TextPrimary}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource BorderSoft}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="10,6"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Height" Value="36"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border x:Name="bd"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="10">
+                            <ScrollViewer x:Name="PART_ContentHost"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsKeyboardFocusWithin" Value="True">
+                                <Setter TargetName="bd" Property="BorderBrush" Value="{StaticResource Accent}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </Window.Resources>
+
+    <Grid Margin="18">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <Border Background="AliceBlue" Padding="10">
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <TextBlock Text="Let's Get Organized" FontSize="24" FontWeight="Bold" VerticalAlignment="Center"/>
-            </StackPanel>
+
+        <!-- header -->
+        <Border Background="#FFEFF6FF"
+                BorderBrush="{StaticResource BorderSoft}"
+                BorderThickness="1"
+                CornerRadius="14"
+                Padding="14"
+                Margin="0,0,0,12">
+            <TextBlock Text="Let's Get Organized" Style="{StaticResource TitleText}"/>
         </Border>
-        <Grid Grid.Row="1" Margin="10" HorizontalAlignment="Center">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <StackPanel Grid.Column="0" Name="TaskDetailsPanel">
-                <TextBlock Text="Are you sick of a full Downloads folder or ..." FontSize="18" FontWeight="Bold" Margin="0,0,0,10" TextAlignment="Center"/>
-                <TextBlock TextAlignment="Center">
+
+        <!-- intro -->
+        <Border Grid.Row="1"
+                Background="{StaticResource CardBg}"
+                BorderBrush="{StaticResource BorderSoft}"
+                BorderThickness="1"
+                CornerRadius="14"
+                Padding="18"
+                Margin="0,0,0,12">
+            <StackPanel HorizontalAlignment="Center" Width="640" VerticalAlignment="Center">
+                <TextBlock Text="Are you sick of a full Downloads folder or ..."
+                           Style="{StaticResource SectionHeaderText}"
+                           Margin="0,0,0,10"/>
+
+                <TextBlock Style="{StaticResource BodyText}">
                     Are you sick of files seeming like they're just thrown in random spots on your drive because you didn't pay
                     <LineBreak/>
-                    attention to where you saved them? 
+                    attention to where you saved them?
                 </TextBlock>
-                <TextBlock/>
-                <TextBlock TextAlignment="Center">
-                    Lets Get Organized is here to help you take control of your files and folders!
+
+                <TextBlock Margin="0,10,0,0" Style="{StaticResource BodyText}">
+                    Let's Get Organized is here to help you take control of your files and folders!
                 </TextBlock>
             </StackPanel>
-        </Grid>
-        <Grid Grid.Row="2" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Name="StartOrganizing">
-            <Grid Grid.Row="2" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <StackPanel HorizontalAlignment="Center">
-                    <TextBlock Text="Begin organizing your entire drive here!"
-                   TextAlignment="Center"
-                   Margin="0,0,0,6"/>
+        </Border>
 
-                    <Button Content="Start Organizing"
-                Height="40"
-                Padding="14,6"
-                Margin="0,0,0,18"
-                HorizontalAlignment="Center"
-                Click="StartOrganizing_Click"/>
+        <!-- main -->
+        <Grid Grid.Row="2" HorizontalAlignment="Center" Width="640">
 
-                    <TextBlock Text="Or choose to organize specific folders instead"
-                   TextAlignment="Center"
-                   Margin="0,0,0,6"/>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
-                    <Button Content="Browse"
-                Height="40"
-                Padding="14,6"
-                HorizontalAlignment="Center"
+            <Grid Grid.Row="0"/>
+
+            <TextBlock Grid.Row="1"
+               Text="Begin organizing your entire drive here!"
+               Style="{StaticResource BodyText}"
+               Margin="0,0,0,8"/>
+
+            <Button Grid.Row="2"
+            Content="Start Organizing"
+            Style="{StaticResource PrimaryButton}"
+            Width="180"
+            Margin="0,0,0,18"
+            Click="StartOrganizing_Click"/>
+
+            <TextBlock Grid.Row="3"
+               Text="Or choose to organize specific folders instead"
+               Style="{StaticResource BodyText}"
+               Margin="0,0,0,10"/>
+
+            <Grid Grid.Row="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="12"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="12"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBox Grid.Column="0"
+                 x:Name="SelectedPathTextBox"
+                 Style="{StaticResource PrettyTextBox}"
+                 Width="360"
+                 IsReadOnly="True"
+                 Text="No folder selected"/>
+
+                <Button Grid.Column="2"
+                Content="Browse"
+                Style="{StaticResource GhostButton}"
+                Width="110"
                 Click="SelectFolders_Click"/>
-                </StackPanel>
+
+                <Button Grid.Column="4"
+                Content="Organize"
+                Style="{StaticResource PrimaryButton}"
+                Width="110"
+                Click="SelectFolders_Click"/>
             </Grid>
 
+            <Grid Grid.Row="5"/>
+
         </Grid>
-        <Grid Grid.Row="3" Margin="10" HorizontalAlignment="Center">
-            <TextBlock Text="© 2025 Lets Get Organized" FontSize="12" HorizontalAlignment="Center"/>
-        </Grid>
+
+
+        <!-- footer -->
+        <Border Grid.Row="3"
+                BorderBrush="{StaticResource BorderSoft}"
+                BorderThickness="0,1,0,0"
+                Padding="10"
+                Margin="0,10,0,0">
+            <TextBlock Text="MIT Licensed • © 2025 Contributors"
+                       Foreground="{StaticResource TextSecondary}"
+                       FontSize="12"
+                       HorizontalAlignment="Center"/>
+        </Border>
+
     </Grid>
 </Window>
