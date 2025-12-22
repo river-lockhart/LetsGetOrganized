@@ -1,5 +1,5 @@
 ﻿LetsGetOrganizedWPF
-1.0.0.0
+
 
 winexe
 C#
@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET10_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NET10_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 C:\LetsGetOrganizedProject\LetsGetOrganized\LetsGetOrganizedWPF\App.xaml
-41501914099
+675955273
 
-10729848378
+11-630076975
 2061245606974
-MainPage.xaml;MainWindow.xaml;OptionsPageFull.xaml;OptionsPagePartial.xaml;
+MainPage.xaml;MainWindow.xaml;OptionsPageFull.xaml;OptionsPagePartial.xaml;OptionsStep1Control.xaml;PageStyles.xaml;
 
-True
+False
 

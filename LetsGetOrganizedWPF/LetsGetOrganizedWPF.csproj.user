@@ -11,5 +11,8 @@
     <Compile Update="OptionsPagePartial.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="OptionsStep1Control.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

@@ -1,16 +1,16 @@
-﻿using System.Diagnostics;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.IO;
 
 namespace LetsGetOrganizedWPF
 {
     public partial class OptionsPagePartial : Page
     {
-        StartScript startScript = new StartScript();
+        private readonly StartScript startScript = new StartScript();
+        private readonly RulesConfig rulesConfig = new RulesConfig();
+        private readonly OptionsStep1Control step1Control = new OptionsStep1Control();
 
-        private readonly String? mode;
-        private readonly String? path;
+        private readonly string? mode;
+        private readonly string? path;
 
         public OptionsPagePartial()
         {
@@ -19,7 +19,7 @@ namespace LetsGetOrganizedWPF
             path = string.Empty;
         }
 
-        public OptionsPagePartial(String? mode, String? path) : this()
+        public OptionsPagePartial(string? mode, string? path) : this()
         {
             this.mode = mode;
             this.path = path;
@@ -30,14 +30,53 @@ namespace LetsGetOrganizedWPF
             startScript.RunLogic(this.mode, this.path);
         }
 
+        private void NextButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (!Step1Control.TryBuildOptions(out SharedRules step1))
+                return;
+
+            // clear rules if re-running wizard
+            rulesConfig.Ruleset.Rules.Clear();
+
+            rulesConfig.Ruleset.Rules.Add(new RulesConfig.Rule
+            {
+                RuleId = "file-types",
+                Description = "Controls which file extensions are included",
+                Params =
+        {
+            ["allExtensions"] = step1.AllExtensions,
+            ["customExtensions"] = step1.CustomExtensions
+        }
+            });
+
+            rulesConfig.Ruleset.Rules.Add(new RulesConfig.Rule
+            {
+                RuleId = "subfolders",
+                Description = "Include files from subdirectories",
+                Params =
+        {
+            ["includeSubfolders"] = step1.IncludeSubfolders
+        }
+            });
+
+            rulesConfig.Ruleset.Rules.Add(new RulesConfig.Rule
+            {
+                RuleId = "hidden-files",
+                Description = "Include hidden files",
+                Params =
+        {
+            ["includeHiddenFiles"] = step1.IncludeHiddenFiles
+        }
+            });
+
+            NavigationService.GoBack();
+        }
+
+
         private void GoBackButton_Click(object sender, RoutedEventArgs e)
         {
             if (NavigationService.CanGoBack)
-            {
                 NavigationService.GoBack();
-
-            }
         }
-
     }
 }
