@@ -5,13 +5,13 @@
     <Compile Update="MainPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="OptionsPageFull.xaml.cs">
+    <Compile Update="OptionsPage1.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="OptionsPagePartial.xaml.cs">
+    <Compile Update="UserControls\OptionsStep1Control.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="OptionsStep1Control.xaml.cs">
+    <Compile Update="UserControls\Step1DriveSelection.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

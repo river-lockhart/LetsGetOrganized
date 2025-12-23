@@ -14,7 +14,7 @@ namespace LetsGetOrganizedWPF
 
         public void StartOrganizingFullDrive_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new OptionsPageFull("full", @"C:"));
+            NavigationService.Navigate(new OptionsPage1("full", @"C:"));
         }
 
         public void BrowseButton_Click(object sender, RoutedEventArgs e)
@@ -35,7 +35,7 @@ namespace LetsGetOrganizedWPF
 
         public void OrgBrowsedDirectory_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new OptionsPagePartial("partial", SelectedPathTextBox.Text));
+            NavigationService.Navigate(new OptionsPage1("partial", SelectedPathTextBox.Text));
         }
 
     }
