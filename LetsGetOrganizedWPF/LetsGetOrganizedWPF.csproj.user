@@ -2,19 +2,19 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <Compile Update="MainPage.xaml.cs">
+    <Compile Update="Pages\MainPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="OptionsPage1.xaml.cs">
+    <Compile Update="Pages\OptionsPageOne.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UserControls\OptionsStep1Control.xaml.cs">
+    <Compile Update="UserControls\OptionsPageOne\OptionsStepOneControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UserControls\Step1DirectorySelection.xaml.cs">
+    <Compile Update="UserControls\OptionsPageOne\StepOneDirectorySelection.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UserControls\Step1DriveSelection.xaml.cs">
+    <Compile Update="UserControls\OptionsPageOne\StepOneDriveSelection.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

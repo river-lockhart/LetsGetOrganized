@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET10_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NET10_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 C:\LetsGetOrganizedProject\LetsGetOrganized\LetsGetOrganizedWPF\App.xaml
-7817686010
+7-1301573081
 
-12771486558
+12-830057262
 2061245606974
-MainPage.xaml;MainWindow.xaml;OptionsPage1.xaml;PageStyles.xaml;UserControls\OptionsStep1Control.xaml;UserControls\Step1DirectorySelection.xaml;UserControls\Step1DriveSelection.xaml;
+MainWindow.xaml;PageStyles.xaml;Pages\MainPage.xaml;Pages\OptionsPageOne.xaml;UserControls\OptionsPageOne\OptionsStepOneControl.xaml;UserControls\OptionsPageOne\StepOneDirectorySelection.xaml;UserControls\OptionsPageOne\StepOneDriveSelection.xaml;
 
-False
+True
 

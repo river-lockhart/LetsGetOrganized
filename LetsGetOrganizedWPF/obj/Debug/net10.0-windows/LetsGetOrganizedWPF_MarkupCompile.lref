@@ -1,9 +1,9 @@
-﻿
+﻿C:\LetsGetOrganizedProject\LetsGetOrganized\LetsGetOrganizedWPF\obj\Debug\net10.0-windows\GeneratedInternalTypeHelper.g.cs
 FC:\LetsGetOrganizedProject\LetsGetOrganized\LetsGetOrganizedWPF\App.xaml;;
-FC:\LetsGetOrganizedProject\LetsGetOrganized\LetsGetOrganizedWPF\MainPage.xaml;;
 FC:\LetsGetOrganizedProject\LetsGetOrganized\LetsGetOrganizedWPF\MainWindow.xaml;;
-FC:\LetsGetOrganizedProject\LetsGetOrganized\LetsGetOrganizedWPF\OptionsPage1.xaml;;
-FC:\LetsGetOrganizedProject\LetsGetOrganized\LetsGetOrganizedWPF\UserControls\OptionsStep1Control.xaml;;
-FC:\LetsGetOrganizedProject\LetsGetOrganized\LetsGetOrganizedWPF\UserControls\Step1DirectorySelection.xaml;;
-FC:\LetsGetOrganizedProject\LetsGetOrganized\LetsGetOrganizedWPF\UserControls\Step1DriveSelection.xaml;;
+FC:\LetsGetOrganizedProject\LetsGetOrganized\LetsGetOrganizedWPF\Pages\MainPage.xaml;;
+FC:\LetsGetOrganizedProject\LetsGetOrganized\LetsGetOrganizedWPF\Pages\OptionsPageOne.xaml;;
+FC:\LetsGetOrganizedProject\LetsGetOrganized\LetsGetOrganizedWPF\UserControls\OptionsPageOne\OptionsStepOneControl.xaml;;
+FC:\LetsGetOrganizedProject\LetsGetOrganized\LetsGetOrganizedWPF\UserControls\OptionsPageOne\StepOneDirectorySelection.xaml;;
+FC:\LetsGetOrganizedProject\LetsGetOrganized\LetsGetOrganizedWPF\UserControls\OptionsPageOne\StepOneDriveSelection.xaml;;
 

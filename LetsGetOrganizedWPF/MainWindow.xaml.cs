@@ -7,7 +7,7 @@ namespace LetsGetOrganizedWPF
         public MainWindow()
         {
             InitializeComponent();
-            MainFrame.Navigate(new MainPage());
+            MainFrame.Navigate(new Pages.MainPage());
         }
     }
 }

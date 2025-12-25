@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\LetsGetOrganizedProject\\LetsGetOrganized\\LetsGetOrganizedWPF\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E0911FF3-4C70-E22A-C8F6-CD22C3992B0C}|LetsGetOrganizedWPF.csproj|c:\\letsgetorganizedproject\\letsgetorganized\\letsgetorganizedwpf\\usercontrols\\step1directoryselection.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E0911FF3-4C70-E22A-C8F6-CD22C3992B0C}|LetsGetOrganizedWPF.csproj|solutionrelative:usercontrols\\step1directoryselection.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{E0911FF3-4C70-E22A-C8F6-CD22C3992B0C}|LetsGetOrganizedWPF.csproj|c:\\letsgetorganizedproject\\letsgetorganized\\letsgetorganizedwpf\\usercontrols\\optionspageone\\optionssteponecontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0911FF3-4C70-E22A-C8F6-CD22C3992B0C}|LetsGetOrganizedWPF.csproj|solutionrelative:usercontrols\\optionspageone\\optionssteponecontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0911FF3-4C70-E22A-C8F6-CD22C3992B0C}|LetsGetOrganizedWPF.csproj|c:\\letsgetorganizedproject\\letsgetorganized\\letsgetorganizedwpf\\usercontrols\\optionsstep1control.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E0911FF3-4C70-E22A-C8F6-CD22C3992B0C}|LetsGetOrganizedWPF.csproj|solutionrelative:usercontrols\\optionsstep1control.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{E0911FF3-4C70-E22A-C8F6-CD22C3992B0C}|LetsGetOrganizedWPF.csproj|c:\\letsgetorganizedproject\\letsgetorganized\\letsgetorganizedwpf\\core\\startscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0911FF3-4C70-E22A-C8F6-CD22C3992B0C}|LetsGetOrganizedWPF.csproj|solutionrelative:core\\startscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0911FF3-4C70-E22A-C8F6-CD22C3992B0C}|LetsGetOrganizedWPF.csproj|c:\\letsgetorganizedproject\\letsgetorganized\\letsgetorganizedwpf\\pagestyles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E0911FF3-4C70-E22A-C8F6-CD22C3992B0C}|LetsGetOrganizedWPF.csproj|solutionrelative:pagestyles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0911FF3-4C70-E22A-C8F6-CD22C3992B0C}|LetsGetOrganizedWPF.csproj|c:\\letsgetorganizedproject\\letsgetorganized\\letsgetorganizedwpf\\usercontrols\\step1driveselection.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E0911FF3-4C70-E22A-C8F6-CD22C3992B0C}|LetsGetOrganizedWPF.csproj|solutionrelative:usercontrols\\step1driveselection.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{E0911FF3-4C70-E22A-C8F6-CD22C3992B0C}|LetsGetOrganizedWPF.csproj|c:\\letsgetorganizedproject\\letsgetorganized\\letsgetorganizedwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0911FF3-4C70-E22A-C8F6-CD22C3992B0C}|LetsGetOrganizedWPF.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,54 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PageStyles.xaml",
-              "DocumentMoniker": "C:\\LetsGetOrganizedProject\\LetsGetOrganized\\LetsGetOrganizedWPF\\PageStyles.xaml",
-              "RelativeDocumentMoniker": "PageStyles.xaml",
-              "ToolTip": "C:\\LetsGetOrganizedProject\\LetsGetOrganized\\LetsGetOrganizedWPF\\PageStyles.xaml",
-              "RelativeToolTip": "PageStyles.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-25T06:05:54.816Z",
+              "DocumentIndex": 0,
+              "Title": "OptionsStepOneControl.xaml.cs",
+              "DocumentMoniker": "C:\\LetsGetOrganizedProject\\LetsGetOrganized\\LetsGetOrganizedWPF\\UserControls\\OptionsPageOne\\OptionsStepOneControl.xaml.cs",
+              "RelativeDocumentMoniker": "UserControls\\OptionsPageOne\\OptionsStepOneControl.xaml.cs",
+              "ToolTip": "C:\\LetsGetOrganizedProject\\LetsGetOrganized\\LetsGetOrganizedWPF\\UserControls\\OptionsPageOne\\OptionsStepOneControl.xaml.cs",
+              "RelativeToolTip": "UserControls\\OptionsPageOne\\OptionsStepOneControl.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T08:56:10.115Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "OptionsStep1Control.xaml",
-              "DocumentMoniker": "C:\\LetsGetOrganizedProject\\LetsGetOrganized\\LetsGetOrganizedWPF\\UserControls\\OptionsStep1Control.xaml",
-              "RelativeDocumentMoniker": "UserControls\\OptionsStep1Control.xaml",
-              "ToolTip": "C:\\LetsGetOrganizedProject\\LetsGetOrganized\\LetsGetOrganizedWPF\\UserControls\\OptionsStep1Control.xaml",
-              "RelativeToolTip": "UserControls\\OptionsStep1Control.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-25T06:02:04.39Z",
+              "Title": "StartScript.cs",
+              "DocumentMoniker": "C:\\LetsGetOrganizedProject\\LetsGetOrganized\\LetsGetOrganizedWPF\\Core\\StartScript.cs",
+              "RelativeDocumentMoniker": "Core\\StartScript.cs",
+              "ToolTip": "C:\\LetsGetOrganizedProject\\LetsGetOrganized\\LetsGetOrganizedWPF\\Core\\StartScript.cs",
+              "RelativeToolTip": "Core\\StartScript.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCQAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T08:55:02.163Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Step1DriveSelection.xaml",
-              "DocumentMoniker": "C:\\LetsGetOrganizedProject\\LetsGetOrganized\\LetsGetOrganizedWPF\\UserControls\\Step1DriveSelection.xaml",
-              "RelativeDocumentMoniker": "UserControls\\Step1DriveSelection.xaml",
-              "ToolTip": "C:\\LetsGetOrganizedProject\\LetsGetOrganized\\LetsGetOrganizedWPF\\UserControls\\Step1DriveSelection.xaml",
-              "RelativeToolTip": "UserControls\\Step1DriveSelection.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-25T06:05:36.983Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Step1DirectorySelection.xaml",
-              "DocumentMoniker": "C:\\LetsGetOrganizedProject\\LetsGetOrganized\\LetsGetOrganizedWPF\\UserControls\\Step1DirectorySelection.xaml",
-              "RelativeDocumentMoniker": "UserControls\\Step1DirectorySelection.xaml",
-              "ToolTip": "C:\\LetsGetOrganizedProject\\LetsGetOrganized\\LetsGetOrganizedWPF\\UserControls\\Step1DirectorySelection.xaml",
-              "RelativeToolTip": "UserControls\\Step1DirectorySelection.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-25T06:05:35.872Z",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\LetsGetOrganizedProject\\LetsGetOrganized\\LetsGetOrganizedWPF\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\LetsGetOrganizedProject\\LetsGetOrganized\\LetsGetOrganizedWPF\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T08:54:40.501Z",
               "EditorCaption": ""
             }
           ]
