@@ -19,7 +19,7 @@
         </StackPanel>
         <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBox x:Name="DirectoryTextBox"
-                     HorizontalAlignment="Center"
+                      HorizontalAlignment="Center"
                       Width="400"
                       Height="30"
                       IsReadOnly="True"

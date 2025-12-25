@@ -23,8 +23,7 @@
             BorderBrush="{StaticResource BorderSoft}"
             BorderThickness="1"
             CornerRadius="14"
-            Padding="14"
-            Margin="0,0,0,12">
+            Padding="14">
             <TextBlock Text="Let's Get Organized" Style="{StaticResource TitleText}"/>
         </Border>
 

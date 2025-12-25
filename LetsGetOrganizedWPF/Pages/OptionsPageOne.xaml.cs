@@ -83,7 +83,7 @@ namespace LetsGetOrganizedWPF.Pages
                 }
             });
 
-            NavigationService.GoBack();
+            NavigationService.Navigate(new OptionsPageTwo());
         }
 
         private void GoBackButton_Click(object sender, RoutedEventArgs e)

@@ -312,4 +312,33 @@
             </Setter.Value>
         </Setter>
     </Style>
+    <Style x:Key="ToggleSwitchStyle" TargetType="ToggleButton">
+        <Setter Property="Width" Value="42"/>
+        <Setter Property="Height" Value="20"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ToggleButton">
+                    <Grid>
+                        <Border x:Name="Track"
+                            CornerRadius="13"
+                            Background="#FFCBD5E1"/>
+
+                        <Ellipse x:Name="Thumb"
+                             Width="15"
+                             Height="15"
+                             Fill="#FF3B82F6"
+                             Margin="2"
+                             HorizontalAlignment="Left"/>
+                    </Grid>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="Thumb" Property="HorizontalAlignment" Value="Right"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
 </ResourceDictionary>
