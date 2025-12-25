@@ -17,15 +17,18 @@
         
         <StackPanel Grid.Row="0">
             <TextBlock Text="Step 1: Choose what to include"
-                Style="{StaticResource SectionHeaderText}"
-                Margin="0,0,0,12"/>
+                Style="{StaticResource StepHeaderText}"/>
         </StackPanel>
 
-        <StackPanel Grid.Row="1" x:Name="DriveSelection">
+        <StackPanel Grid.Row="1" x:Name="DriveSelection" Margin="0 15 0 0">
             <uc:Step1DriveSelection x:Name="DriveSelectionControl"/>
         </StackPanel>
 
-        <StackPanel Grid.Row="2">
+        <StackPanel Grid.Row="1" x:Name="DirectorySelection" Margin="0 15 0 0">
+            <uc:Step1DirectorySelection x:Name="DirectorySelectionControl"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Margin="0 15 0 0">
 
             <TextBlock Text="File Types"
                 Style="{StaticResource SectionHeaderText}"

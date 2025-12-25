@@ -11,6 +11,9 @@
     <Compile Update="UserControls\OptionsStep1Control.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="UserControls\Step1DirectorySelection.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="UserControls\Step1DriveSelection.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

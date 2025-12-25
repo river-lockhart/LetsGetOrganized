@@ -19,8 +19,10 @@ namespace LetsGetOrganizedWPF
             path = string.Empty;
 
             rulesConfig.setRulesMode(mode);
+            rulesConfig.setRulesPath(path);
 
             Step1Control.RulesMode = rulesConfig.getRulesMode();
+            Step1Control.RulesPath = rulesConfig.getRulesPath();
             Step1Control.ApplyRulesMode();
         }
 
@@ -30,8 +32,10 @@ namespace LetsGetOrganizedWPF
             this.path = path;
 
             rulesConfig.setRulesMode(mode ?? string.Empty);
+            rulesConfig.setRulesPath(path ?? string.Empty);
 
             Step1Control.RulesMode = rulesConfig.getRulesMode();
+            Step1Control.RulesPath = rulesConfig.getRulesPath();
             Step1Control.ApplyRulesMode();
         }
 

@@ -1,5 +1,4 @@
-﻿
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 
@@ -8,6 +7,7 @@ namespace LetsGetOrganizedWPF.UserControls
     public partial class OptionsStep1Control : UserControl
     {
         public string RulesMode { get; set; } = string.Empty;
+        public string RulesPath { get; set; } = string.Empty;
 
         private bool allExtensions = true;
         private bool includeSubfolders = false;
@@ -26,7 +26,7 @@ namespace LetsGetOrganizedWPF.UserControls
 
         public void ApplyRulesMode()
         {
-            ModeDeterminesDriveComboBox();
+            ModeDeterminesControlVisibility();
         }
 
         public bool TryBuildOptions(out SharedRules options)
@@ -57,7 +57,6 @@ namespace LetsGetOrganizedWPF.UserControls
             return true;
         }
 
-        // radio button handlers
         private void AllExtensionsRadio_Checked(object sender, RoutedEventArgs e)
         {
             if (CustomExtensionsPanel != null)
@@ -75,15 +74,12 @@ namespace LetsGetOrganizedWPF.UserControls
         {
             CustomExtensionsPanel.Visibility = Visibility.Visible;
             CustomExtensionsTextBox.IsEnabled = true;
-
             allExtensions = false;
             ClearCustomExtensionsErrorUi();
         }
 
-        // checkbox handlers
         private void HiddenCheckbox_Checked(object sender, RoutedEventArgs e) => includeHiddenFiles = true;
         private void HiddenCheckbox_Unchecked(object sender, RoutedEventArgs e) => includeHiddenFiles = false;
-
         private void SubfoldersCheckbox_Checked(object sender, RoutedEventArgs e) => includeSubfolders = true;
         private void SubfoldersCheckbox_Unchecked(object sender, RoutedEventArgs e) => includeSubfolders = false;
 
@@ -119,7 +115,6 @@ namespace LetsGetOrganizedWPF.UserControls
             return parsedExtensions.Count > 0;
         }
 
-        // ui helpers
         private void ApplyCustomExtensionsErrorUi(string message)
         {
             CustomExtensionsTextBox.Tag = "Error";
@@ -145,17 +140,26 @@ namespace LetsGetOrganizedWPF.UserControls
             }
         }
 
-        private void ModeDeterminesDriveComboBox()
+        private void ModeDeterminesControlVisibility()
         {
-            if (DriveSelection == null)
-                return;
 
-            var m = (RulesMode ?? string.Empty).Trim().ToLowerInvariant();
+            var mode = (RulesMode ?? string.Empty).Trim().ToLowerInvariant();
 
-            if (m == "partial")
+            if (mode == "partial")
+            {
                 DriveSelection.Visibility = Visibility.Collapsed;
+                DirectorySelectionControl.DirectoryTextBox.Text = RulesPath ?? string.Empty;
+
+                DirectorySelection.Visibility = Visibility.Visible;
+            }
             else
+            {
                 DriveSelection.Visibility = Visibility.Visible;
+                DirectorySelection.Visibility = Visibility.Collapsed;
+            }
+                
         }
+
+        
     }
 }

@@ -3,6 +3,7 @@
     public class RulesConfig
     {
         private string rulesMode = string.Empty;
+        private string rulesPath = string.Empty;
         public int SchemaVersion { get; set; } = 1;
         public RuleSet Ruleset { get; set; } = new();
 
@@ -28,5 +29,14 @@
             return this.rulesMode;
         }
 
+        public void setRulesPath(string path)
+        {
+            this.rulesPath = path;
+        }
+
+        public string getRulesPath()
+        {
+            return this.rulesPath;
+        }
     }
 }

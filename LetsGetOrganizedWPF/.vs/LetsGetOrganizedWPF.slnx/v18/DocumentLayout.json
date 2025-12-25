@@ -1,36 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\LetsGetOrganizedProject\\LetsGetOrganized\\LetsGetOrganizedWPF\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{E0911FF3-4C70-E22A-C8F6-CD22C3992B0C}|LetsGetOrganizedWPF.csproj|c:\\letsgetorganizedproject\\letsgetorganized\\letsgetorganizedwpf\\usercontrols\\optionsstep1control.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E0911FF3-4C70-E22A-C8F6-CD22C3992B0C}|LetsGetOrganizedWPF.csproj|solutionrelative:usercontrols\\optionsstep1control.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "OptionsStep1Control.xaml",
-              "DocumentMoniker": "C:\\LetsGetOrganizedProject\\LetsGetOrganized\\LetsGetOrganizedWPF\\UserControls\\OptionsStep1Control.xaml",
-              "RelativeDocumentMoniker": "UserControls\\OptionsStep1Control.xaml",
-              "ToolTip": "C:\\LetsGetOrganizedProject\\LetsGetOrganized\\LetsGetOrganizedWPF\\UserControls\\OptionsStep1Control.xaml",
-              "RelativeToolTip": "UserControls\\OptionsStep1Control.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-23T09:39:06.406Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
