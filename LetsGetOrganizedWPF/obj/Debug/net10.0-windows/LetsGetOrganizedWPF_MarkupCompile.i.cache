@@ -16,5 +16,5 @@ C:\LetsGetOrganizedProject\LetsGetOrganized\LetsGetOrganizedWPF\App.xaml
 2061245606974
 MainWindow.xaml;PageStyles.xaml;Pages\MainPage.xaml;Pages\OptionsPageOne.xaml;Pages\OptionsPageTwo.xaml;UserControls\OptionsPageOne\OptionsStepOneControl.xaml;UserControls\OptionsPageOne\StepOneDirectorySelection.xaml;UserControls\OptionsPageOne\StepOneDriveSelection.xaml;UserControls\OptionsPageTwo\PresetCustomToggle.xaml;UserControls\OptionsPageTwo\StepTwoCustom.xaml;UserControls\OptionsPageTwo\StepTwoPresets.xaml;
 
-False
+True
 

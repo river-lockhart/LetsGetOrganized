@@ -1,4 +1,5 @@
-﻿using Microsoft.Win32;
+﻿using LetsGetOrganizedWPF.Core;
+using Microsoft.Win32;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -6,6 +7,7 @@ namespace LetsGetOrganizedWPF.Pages
 {
     public partial class MainPage : Page
     {
+        public RulesConfig rulesConfig = new RulesConfig();
 
         public MainPage()
         {
@@ -14,7 +16,7 @@ namespace LetsGetOrganizedWPF.Pages
 
         public void StartOrganizingFullDrive_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new OptionsPageOne("full", @"C:"));
+            NavigationService.Navigate(new OptionsPageOne("full", @"C:", rulesConfig));
         }
 
         public void BrowseButton_Click(object sender, RoutedEventArgs e)
@@ -35,7 +37,7 @@ namespace LetsGetOrganizedWPF.Pages
 
         public void OrgBrowsedDirectory_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new OptionsPageOne("partial", SelectedPathTextBox.Text));
+            NavigationService.Navigate(new OptionsPageOne("partial", SelectedPathTextBox.Text, rulesConfig));
         }
 
     }

@@ -18,16 +18,9 @@ namespace LetsGetOrganizedWPF.Pages
 
             mode = string.Empty;
             path = string.Empty;
-
-            rulesConfig.setRulesMode(mode);
-            rulesConfig.setRulesPath(path);
-
-            StepOneControl.RulesMode = rulesConfig.getRulesMode();
-            StepOneControl.RulesPath = rulesConfig.getRulesPath();
-            StepOneControl.ApplyRulesMode();
         }
 
-        public OptionsPageOne(string? mode, string? path) : this()
+        public OptionsPageOne(string? mode, string? path, RulesConfig rulesConfig) : this()
         {
             this.mode = mode;
             this.path = path;
@@ -38,6 +31,8 @@ namespace LetsGetOrganizedWPF.Pages
             StepOneControl.RulesMode = rulesConfig.getRulesMode();
             StepOneControl.RulesPath = rulesConfig.getRulesPath();
             StepOneControl.ApplyRulesMode();
+
+            this.rulesConfig.Ruleset = rulesConfig.Ruleset;
         }
 
         private void OrganizeButton_Click(object sender, RoutedEventArgs e)
@@ -83,7 +78,7 @@ namespace LetsGetOrganizedWPF.Pages
                 }
             });
 
-            NavigationService.Navigate(new OptionsPageTwo());
+            NavigationService.Navigate(new OptionsPageTwo(rulesConfig));
         }
 
         private void GoBackButton_Click(object sender, RoutedEventArgs e)

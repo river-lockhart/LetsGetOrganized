@@ -16,7 +16,6 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <!-- header -->
         <Border Grid.Row="0"
         Background="#FFEFF6FF"
         BorderBrush="{StaticResource BorderSoft}"
@@ -36,8 +35,7 @@
             Background="{StaticResource CardBg}"
             BorderBrush="{StaticResource BorderSoft}"
             BorderThickness="1"
-            CornerRadius="14"
-            Padding="18">
+            CornerRadius="14">
             <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
@@ -67,7 +65,8 @@
                     <Button Content="Next"
                             Style="{StaticResource PrimaryButton}"
                             Width="120"
-                            Margin="0,0,12,0"/>
+                            Margin="0,0,12,0"
+                            Click="NextButton_Click"/>
 
                     <Button Content="I Changed My Mind"
                             Style="{StaticResource DangerButtonStyle}"

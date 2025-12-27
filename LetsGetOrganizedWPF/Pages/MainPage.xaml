@@ -8,8 +8,6 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="MainPage">
 
-    
-
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -18,7 +16,6 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <!-- header -->
         <Border Background="#FFEFF6FF"
             BorderBrush="{StaticResource BorderSoft}"
             BorderThickness="1"
@@ -27,7 +24,6 @@
             <TextBlock Text="Let's Get Organized" Style="{StaticResource TitleText}"/>
         </Border>
 
-        <!-- intro -->
         <Border Grid.Row="1"
             Background="{StaticResource CardBg}"
             BorderBrush="{StaticResource BorderSoft}"
@@ -52,7 +48,6 @@
             </StackPanel>
         </Border>
 
-        <!-- main -->
         <Grid Grid.Row="2" HorizontalAlignment="Center" Width="640">
 
             <Grid.RowDefinitions>
@@ -113,13 +108,9 @@
             Click="OrgBrowsedDirectory_Click"
             IsEnabled="false"/>
             </Grid>
-
             <Grid Grid.Row="5"/>
-
         </Grid>
 
-
-        <!-- footer -->
         <Border Grid.Row="3"
         Background="{StaticResource CardBg}"
         BorderBrush="{StaticResource BorderSoft}"

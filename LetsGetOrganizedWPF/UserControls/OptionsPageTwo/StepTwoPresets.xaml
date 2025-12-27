@@ -7,7 +7,86 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
-        <TextBlock Style="{StaticResource StepHeaderText}"
-                Text="This is the Presets settings"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0"
+                Style="{StaticResource StepHeaderText}"
+                Text="Please select a Preset"/>
+        <ScrollViewer Grid.Row="1"
+                    Style="{StaticResource PrettyScrollViewer}"
+                    HorizontalScrollBarVisibility="Disabled"
+                    VerticalScrollBarVisibility="Auto"
+                    Width="650"
+                    Height="180"
+                    Margin="0,10,0,0">
+            <Grid x:Name="PresetTable" HorizontalAlignment="Center" VerticalAlignment="Top" Width="600">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition Width="151*"/>
+                    <ColumnDefinition Width="48*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <!--Row Borders-->
+                <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Background="{StaticResource BorderSoft}" Height="1" Margin="0,0,0,-23"/>
+                <Border Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Background="{StaticResource BorderSoft}" Height="1" Margin="0,0,0,-40"/>
+                <Border Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Background="{StaticResource BorderSoft}" Height="1" Margin="0,0,0,-26"/>
+                <Border Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Background="{StaticResource BorderSoft}" Height="1" Margin="0,0,0,-26"/>
+                <Border Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" Background="{StaticResource BorderSoft}" Height="1" Margin="0,0,0,-26"/>
+                <Border Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" Background="{StaticResource BorderSoft}" Height="1" Margin="0,0,0,-26"/>
+                <Border Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="3" Background="{StaticResource BorderSoft}" Height="1" Margin="0,0,0,-26"/>
+                <Border Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="3" Background="{StaticResource BorderSoft}" Height="1" Margin="0,0,0,-40"/>
+
+                <!--Column Borders-->
+                <Border Grid.Row="0" Grid.RowSpan="9" Grid.Column="0" Background="{StaticResource BorderSoft}" Width="1" Margin="0,0,-120,0"/>
+                <Border Grid.Row="0" Grid.RowSpan="9" Grid.Column="1" Background="{StaticResource BorderSoft}" Width="1" Margin="0,0,-365,0"/>
+
+                <!--Preset Names-->
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" Grid.Column="0" Text="Preset Name" FontWeight="Bold" Margin="5,5,5,5"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="0" Text="Downloads Cleanup" Margin="5,5,5,5"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="0" Text="School/Coursework" Margin="5,5,5,5"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="0" Text="Work/Projects" Margin="5,5,5,5"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" Grid.Column="0" Text="Photos and Media" Margin="5,5,5,5"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5" Grid.Column="0" Text="Gaming/Mods" Margin="5,5,5,5"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="6" Grid.Column="0" Text="File Type" Margin="5,5,5,5"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="7" Grid.Column="0" Text="Purpose" Margin="5,5,5,5"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="8" Grid.Column="0" Text="No Nested Folders" Margin="5,5,5,5"/>
+
+                <!--Preset Descriptions-->
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" Grid.Column="1" Text="Description" FontWeight="Bold" Margin="5,5,5,5"/>
+                <TextBlock Grid.Row="1" Grid.Column="1" Text="Designed for chaotic downloads: installers, zips, docs, random images, etc." TextWrapping="Wrap" Margin="5,5,5,5"/>
+                <TextBlock Grid.Row="2" Grid.Column="1" Text="Groups by class and then assignments/notes/slides/labs." TextWrapping="Wrap" Margin="5,5,5,5"/>
+                <TextBlock Grid.Row="3" Grid.Column="1" Text="Groups by project/client and then docs/assets/exports/notes." TextWrapping="Wrap" Margin="5,5,5,5"/>
+                <TextBlock Grid.Row="4" Grid.Column="1" Text="Groups by year/month with a clean media structure." TextWrapping="Wrap" Margin="5,5,5,5"/>
+                <TextBlock Grid.Row="5" Grid.Column="1" Text="Separates mods, save files, screenshots, clips, config files." TextWrapping="Wrap" Margin="5,5,5,5"/>
+                <TextBlock Grid.Row="6" Grid.Column="1" Text="Documents / Media / Archives / Code / Installers / Other." TextWrapping="Wrap" Margin="5,5,5,5"/>
+                <TextBlock Grid.Row="7" Grid.Column="1" Text="“To Read” (pdf/doc), “To Watch” (video), “To Listen” (audio), “To Edit” (psd/aep/blend), “To Install” (exe/msi/dmg), etc." TextWrapping="Wrap" Margin="5,5,5,5"/>
+                <TextBlock Grid.Row="8" Grid.Column="1" Text="No top-level folders. All docs get put in one folder." TextWrapping="Wrap" Margin="5,5,5,5"/>
+                
+                <!--Preset Selection-->
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" Grid.Column="2" Text="Select" FontWeight="Bold" Margin="5,5,5,5"/>
+                <CheckBox x:Name="DownloadsCheck" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PrettyCheckBox}"  Grid.Row="1" Grid.Column="2" Margin="5,5,5,5" IsChecked="false" Checked="OnChecked"/>
+                <CheckBox x:Name="SchoolCheck" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PrettyCheckBox}" Grid.Row="2" Grid.Column="2" Margin="5,5,5,5" IsChecked="false" Checked="OnChecked"/>
+                <CheckBox x:Name="WorkCheck" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PrettyCheckBox}" Grid.Row="3" Grid.Column="2" Margin="5,5,5,5" IsChecked="false" Checked="OnChecked"/>
+                <CheckBox x:Name="PhotosCheck" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PrettyCheckBox}" Grid.Row="4" Grid.Column="2" Margin="5,5,5,5" IsChecked="false" Checked="OnChecked"/>
+                <CheckBox x:Name="GamingCheck" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PrettyCheckBox}"  Grid.Row="5" Grid.Column="2" Margin="5,5,5,5" IsChecked="false" Checked="OnChecked"/>
+                <CheckBox x:Name="FileTypeCheck" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PrettyCheckBox}" Grid.Row="6" Grid.Column="2" Margin="5,5,5,5" IsChecked="false" Checked="OnChecked"/>
+                <CheckBox x:Name="PurposeCheck" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PrettyCheckBox}" Grid.Row="7" Grid.Column="2" Margin="5,5,5,5" IsChecked="false" Checked="OnChecked"/>
+                <CheckBox x:Name="NoNestedCheck" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PrettyCheckBox}" Grid.Row="8" Grid.Column="2" Margin="5,5,5,5" IsChecked="false" Checked="OnChecked"/>
+
+            </Grid>
+        </ScrollViewer>
     </Grid>
 </UserControl>
